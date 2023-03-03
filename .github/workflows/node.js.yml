@@ -29,3 +29,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run test:nowatch
+    - name: Deploy to Heroku
+      uses: AkhileshNS/heroku-deploy@v3.12.13
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "bookstore-flying-dog-client" #Must be unique in Heroku
+        heroku_email: "josepho011235@gmail.com"  
