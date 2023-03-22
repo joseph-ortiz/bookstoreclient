@@ -1,4 +1,4 @@
-const INITIAL_BOOK_REDUCER_STATE = {
+export const INITIAL_BOOK_REDUCER_STATE = {
     books: []
 }
 const bookReducer = (state = INITIAL_BOOK_REDUCER_STATE, action) => {
