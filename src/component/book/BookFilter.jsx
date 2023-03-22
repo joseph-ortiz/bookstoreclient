@@ -1,19 +1,13 @@
 import React from "react";
 import { Box, Paper } from "@mui/material";
-//import { BookFilterStyles, BookFilterPaperStyles } from "./BookStyles";
+import { bookFilter, bookFilterPaper } from "./BookStyles";
 const BookFilter = () => {
   return (
     <Box
-      sx={{
-        width: "20%",
-        height: "500px",
-      }}
+      sx={bookFilter}
     >
       <Paper
-        sx={{
-          width: "100%",
-          height: "100%",
-        }}
+        sx={bookFilterPaper}
       >
         book filter
       </Paper>
