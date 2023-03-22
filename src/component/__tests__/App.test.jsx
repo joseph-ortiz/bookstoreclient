@@ -1,9 +1,10 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react';
+import renderWithRedux from '../../util/testutil';
 import App from '../App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Here we will display all books./i);
-  expect(linkElement).toBeInTheDocument();
+describe('App Component', () => {
+  it("should render app with error", () => {
+    const { asFragment } = renderWithRedux(<App />,{})
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
