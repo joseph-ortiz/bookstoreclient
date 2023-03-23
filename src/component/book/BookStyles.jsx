@@ -1,6 +1,3 @@
-import{styled} from '@mui/system'
-
-
 let bookContainer = {
     display: 'flex',
     justifyContent: 'center',
@@ -15,7 +12,22 @@ let bookFilterPaper = {
     width: "100%",
     height: "100%",
   };
+let bookList = {
+    width: "100%",
+    height: "100%",
+};
+export const bookListItemPaper = {
+    padding:'10px',
+    display: "flex",
+    width: '80%'
+};
+export const bookListItemImage = {
+    width: "180px",
+    height: "200px",
+};
 
 export {bookContainer,
     bookFilter,
-    bookFilterPaper}
+    bookFilterPaper,
+    bookList
+}

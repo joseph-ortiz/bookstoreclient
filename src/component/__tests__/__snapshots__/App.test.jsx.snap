@@ -41,6 +41,9 @@ exports[`App Component should render app with error 1`] = `
           class="MuiBox-root css-0"
         >
           Here we will display all books.
+          <div
+            class="MuiBox-root css-uwwqev"
+          />
         </div>
       </div>
     </div>
